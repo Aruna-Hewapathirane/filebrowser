@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 341
+  Height = 682
+  Top = 232
+  Width = 1039
+  Caption = 'Aruna''s Tools V0.01'
+  ClientHeight = 682
+  ClientWidth = 1039
+  LCLVersion = '3.4.0.0'
+  object ShellTreeView1: TShellTreeView
+    Left = 8
+    Height = 323
+    Top = 8
+    Width = 199
+    FileSortType = fstAlphabet
+    TabOrder = 0
+    ObjectTypes = [otFolders]
+    ShellListView = ShellListView1
+  end
+  object ShellListView1: TShellListView
+    Left = 208
+    Height = 328
+    Top = 8
+    Width = 824
+    Color = clDefault
+    SortType = stText
+    TabOrder = 1
+    OnChange = ShellListView1Change
+    ObjectTypes = [otNonFolders]
+    ShellTreeView = ShellTreeView1
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 314
+    Top = 348
+    Width = 1016
+    Font.Height = -13
+    Font.Name = 'Noto Sans Mono'
+    Lines.Strings = (
+      'Memo1'
+    )
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 2
+    WordWrap = False
+  end
+  object Image1: TImage
+    Left = 688
+    Height = 323
+    Top = 8
+    Width = 328
+    Proportional = True
+    Stretch = True
+  end
+end
